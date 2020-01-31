@@ -19,16 +19,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnShowDatafromDb.setOnClickListener {
-            tvDisplayName.text = ""
-            val dbHandler = MindOrksDBOpenHelper(this, null)
-            val cursor = dbHandler.getAllName()
-            cursor!!.moveToFirst()
-            tvDisplayName.append((cursor.getString(cursor.getColumnIndex(MindOrksDBOpenHelper.COLUMN_NAME))))
-            while (cursor.moveToNext()) {
-                tvDisplayName.append((cursor.getString(cursor.getColumnIndex(MindOrksDBOpenHelper.COLUMN_NAME))))
-                tvDisplayName.append("\n")
-            }
-            cursor.close()
+//            tvDisplayName.text = ""
+//            val dbHandler = MindOrksDBOpenHelper(this, null)
+//            val cursor = dbHandler.getAllName()
+//            cursor!!.moveToFirst()
+//            tvDisplayName.append((cursor.getString(cursor.getColumnIndex(MindOrksDBOpenHelper.COLUMN_NAME))))
+//            while (cursor.moveToNext()) {
+//                tvDisplayName.append((cursor.getString(cursor.getColumnIndex(MindOrksDBOpenHelper.COLUMN_NAME))))
+//                tvDisplayName.append("\n")
+//            }
+//            cursor.close()
         }
     }
 }
